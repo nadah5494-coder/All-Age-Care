@@ -37,9 +37,24 @@
                 <input type="text">
             </div>
 
+            <!-- National ID (UPDATED) -->
             <div class="box">
                 <label>National ID</label>
-                <input type="text" placeholder="Enter National ID">
+
+                <div class="row">
+                    
+                    <!-- Upload ID -->
+                    <div class="upload" id="idUploadBox">
+                        ⬆ Add your photo
+                        <input type="file" id="idFileInput" hidden>
+                    </div>
+
+                    <!-- ID Input -->
+                    <input type="text" placeholder="Enter National ID" style="flex:1;">
+                
+                </div>
+
+                <img id="idPreview" width="80" style="display:none; margin-top:10px;">
             </div>
 
             <div class="box">

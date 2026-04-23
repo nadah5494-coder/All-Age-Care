@@ -8,7 +8,7 @@ tabs.forEach(tab => {
     });
 });
 
-// Upload Image
+// Profile Image
 let uploadBox = document.getElementById("uploadBox");
 let fileInput = document.getElementById("fileInput");
 let preview = document.getElementById("preview");
@@ -20,6 +20,21 @@ fileInput.addEventListener("change", () => {
     if (file) {
         preview.src = URL.createObjectURL(file);
         preview.style.display = "block";
+    }
+});
+
+// National ID Image
+let idUploadBox = document.getElementById("idUploadBox");
+let idFileInput = document.getElementById("idFileInput");
+let idPreview = document.getElementById("idPreview");
+
+idUploadBox.addEventListener("click", () => idFileInput.click());
+
+idFileInput.addEventListener("change", () => {
+    let file = idFileInput.files[0];
+    if (file) {
+        idPreview.src = URL.createObjectURL(file);
+        idPreview.style.display = "block";
     }
 });
 
