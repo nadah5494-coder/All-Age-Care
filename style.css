@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.sub {
+    color: gray;
+    margin: 10px 0 20px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    background: #e9d9f7;
+    padding: 5px;
+    border-radius: 30px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: purple;
+    color: white;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Rows */
+.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.box label {
+    margin-bottom: 5px;
+}
+
+.box input {
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+.box small {
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Upload */
+.upload {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin: 15px 0;
+    color: purple;
+}
+
+/* Age Section */
+.age {
+    margin: 15px 0;
+}
+
+.checks {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #eee;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.check-item input {
+    accent-color: purple;
+    cursor: pointer;
+}
+
+/* Agree */
+.agree {
+    margin: 15px 0;
+}
+
+/* Button */
+.btn {
+    background: purple;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer-text {
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
